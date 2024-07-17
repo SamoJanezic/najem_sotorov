@@ -1,0 +1,55 @@
+@use '../custom' as *;
+
+// GRADIENT MIXIN
+@mixin gradient {
+    background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+}
+
+// ABSOLUTE CENTER
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// TRANSITION PROPERTY
+@mixin transitionProperty {
+    transition-duration: 1000ms;
+    transition-property: all;
+}
+
+@mixin textGradient ($color1, $color2, $color3) {
+    background: linear-gradient(to right, $color1, $color2, $color3);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.95;
+}
+
+@mixin textAnimation ($color1, $color2) {
+    background: linear-gradient(270deg, $color1, $color2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+
+    -webkit-animation: animateGradient 5s ease infinite;
+    animation: animateGradient 5s ease infinite;
+}
+
+@-webkit-keyframes animateGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes animateGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@mixin testGradient {
+    background: linear-gradient(90deg, #ff0000 0%, #ff9a00 10%, #d1de21 20%, #4fdc4a 30%, #3fdad8 40%, #2fc9e2 50%, #1c7fee 60%, #5f15f2 70%, #ba0cf8 80%, #fb07d9 90%, #ff0000 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.95;
+}

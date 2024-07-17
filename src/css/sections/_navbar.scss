@@ -1,0 +1,46 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+@use "../components/buttons" as *;
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+.menu {
+    width: 100vw;
+    overflow-x: hidden;
+    margin-bottom: 200px;
+    @include gradient;
+
+    li {
+        padding: 0 0.7rem;
+
+        a {
+            color: $white;
+            text-transform: capitalize;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    }
+
+    .link-custom {
+        color: #ffc107;
+
+        &:hover {
+            font-weight: 700;
+            color: darkblue;
+            // @include textGradient($gray-100, rgb(149, 97, 1));
+        }
+    }
+
+    .router-link-active {
+        // background: yellow;
+        border-radius: 5px;
+        color: $white;
+        font-variant: italic;
+    }
+
+    .logo {
+        font-family: "Black Ops One", system-ui;
+        font-size: 1.8rem;
+    }
+
+
+}
