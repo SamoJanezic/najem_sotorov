@@ -8,7 +8,6 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-images/šotor
 .DS_Store
 dist
 dist-ssr

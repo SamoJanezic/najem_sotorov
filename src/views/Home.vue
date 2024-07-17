@@ -72,22 +72,22 @@
                 // description: 'Rezervacija'
                 properties: [
                     {
-                        image: '../../images/šotor/6x10 black.jpg',
+                        image: '../../images/6x10 black.jpg',
                         imageAlt: 'mere šotora',
                         text: 'Zadostna velikost za do 50 ljudi'
                     },
                     {
-                        image: '../../images/šotor/bevestiging-met-elastiek-pvc-party-tent.jpg',
+                        image: '../../images/bevestiging-met-elastiek-pvc-party-tent.jpg',
                         imageAlt: 'Slika ogrodja',
                         text: 'Močno kovinsko ogrodje'
                     },
                     {
-                        image: '../../images/šotor/IMG_9862.JPG',
+                        image: '../../images/IMG_9862.JPG',
                         imageAlt: 'Slika ogrodja',
                         text: 'Dodatne stranice za zavarovanje pred dežjem, vetrom itd.'
                     },
                     {
-                        image: '../../images/šotor/img-1802.jpg',
+                        image: '../../images/img-1802.jpg',
                         imageAlt: 'Slika ogrodja',
                         text: 'Hitro zrolanje dodatnih stranic'
                     },
