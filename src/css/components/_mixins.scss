@@ -47,8 +47,14 @@
     100%{background-position:0% 50%}
 }
 
+// @mixin testGradient {
+//     background: linear-gradient(90deg, #ff0000 0%, #ff9a00 10%, #d1de21 20%, #4fdc4a 30%, #3fdad8 40%, #2fc9e2 50%, #1c7fee 60%, #5f15f2 70%, #ba0cf8 80%, #fb07d9 90%, #ff0000 100%);
+//     background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     opacity: 0.95;
+// }
 @mixin testGradient {
-    background: linear-gradient(90deg, #ff0000 0%, #ff9a00 10%, #d1de21 20%, #4fdc4a 30%, #3fdad8 40%, #2fc9e2 50%, #1c7fee 60%, #5f15f2 70%, #ba0cf8 80%, #fb07d9 90%, #ff0000 100%);
+    background: linear-gradient(90deg,#3fdad8 20%, #1c7fee 40%,  #1c7fee 60%, #eecb1c 80%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0.95;

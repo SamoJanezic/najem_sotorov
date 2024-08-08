@@ -1,5 +1,5 @@
 <template>
-    <section id="home" class="intro-section">
+    <section id="home" class="intro-section fw-bolder">
         <div class="container">
             <div class="">
                 <div class="">
