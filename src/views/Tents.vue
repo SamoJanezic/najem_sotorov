@@ -1,7 +1,10 @@
+<script setup lang="ts">
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faHouse } from '@fortawesome/free-solid-svg-icons'
+</script>
+
 <template>
     <div class="container">
-        <div class="pt-5 pb-5 mt-5 mb-5">
-            To je <span class="text-danger text-uppercase">Šotori</span> stran
-        </div>
+        <div class="p-5 m-5">this is the Šotori page</div>
     </div>
 </template>

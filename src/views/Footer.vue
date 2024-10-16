@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer pt-5">
+    <footer class="footer pt-3 pb-3">
         <div class="container">
             <div class="row contact-box">
                 <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex" v-for="contact in contactOptions">
@@ -11,11 +11,23 @@
                     </div>
                 </div>
             </div>
+            <div class="w-100 row social">
+                <div class="col-md-6 text">
+                    Pridružite se nam na socialnih omrežjih
+                </div>
+                <div class="col-md-6">
+                    <a  v-for="icon in socialMediaIcons">
+                        <fa class="pe-3 social-icon" :icon=icon />
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 </template>
 
 <script>
+import { icon } from '@fortawesome/fontawesome-svg-core';
+
     export default {
         data() {
             return {
@@ -27,7 +39,7 @@
                                 <path d="M15 7a2 2 0 0 1 2 2" />
                                 <path d="M15 3a6 6 0 0 1 6 6" />
                             </svg>`,
-                        title: '386 (0) 12 345 678',
+                        title: '040-708-113',
                         subtitle: 'pon-pet 8:00 - 16:00'
                     },
                     mail: {
@@ -51,7 +63,19 @@
                         title: 'Mota 20',
                         subtitle: '9240 Ljutomer'
                     }
+                },
+                socialMediaIcons: {
+                    facebook: ['fab', 'facebook'],
+                    twitter: ['fab', 'twitter'],
+                    instagram: ['fab', 'instagram'],
+                    linkedIn: ['fab', 'linkedin'],
+                    github: ['fab', 'github']
                 }
+            }
+        },
+        methods: {
+            conWrite() {
+                console.log('yeah');
             }
         }
     }

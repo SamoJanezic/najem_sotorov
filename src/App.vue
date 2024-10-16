@@ -1,7 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Navbar from './views/Navbar.vue'
-import Intro from './views/Intro.vue'
 import Footer_section from './views/Footer.vue'
 </script>
 

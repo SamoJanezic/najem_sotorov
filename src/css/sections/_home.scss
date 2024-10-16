@@ -79,6 +79,8 @@
         a {
             color: $yellow;
             width: 100px;
+            position: relative;
+            left: 600px;
 
             &:hover {
                 color: yellow;

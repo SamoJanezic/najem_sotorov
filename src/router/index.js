@@ -1,8 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Intro from '../views/Intro.vue'
 import Home from '../views/Home.vue'
 import Tents from '../views/Tents.vue'
-import Inflatables from '../views/Inflatables.vue'
+import Additions from '../views/Additions.vue'
 import About from '../views/About.vue'
 import Contact from '../views/Contact.vue'
 import NotFound from "../views/NotFound.vue"
@@ -21,9 +20,9 @@ const router = createRouter({
       component: Tents
     },
     {
-      path: '/napihljiva-igrala',
-      name: 'napihljiva-igrala',
-      component: Inflatables
+      path: '/dodatne-storitve',
+      name: 'dodtne-storitve',
+      component: Additions
     },
     {
       path: '/kontakt',

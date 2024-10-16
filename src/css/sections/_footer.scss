@@ -1,20 +1,31 @@
 @use "../custom" as *;
 @use "../components/mixins" as *;
+@use "../components/buttons" as *;
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
 
 .footer {
     color: $white;
     padding-top: 1rem;
     background-color: $footer;
+    width: 100%;
 }
 
 .contact-box {
-    position: relative;
+    // position: relative;
 
 
     &__icon {
         width: 4rem;
         stroke: $primary;
-        padding-top: 0.5rem;
+        padding-top: 0.3rem;
+    }
+
+    &__icon2 {
+        width: 3.5rem;
+        margin-right: 0.5rem;
+        color: $primary;
+        font-size: 2.8em;
+        padding-top: 0.8rem;;
     }
 
     &__info {
@@ -27,5 +38,15 @@
         &--subtitle {
             color: $gray-600;
         }
+    }
+}
+
+.social{
+    width: 100%;
+    background-color: #212121;
+    font-size: 1em;
+
+    &-icon{
+        padding:10px;
     }
 }

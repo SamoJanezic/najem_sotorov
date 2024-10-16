@@ -11,26 +11,22 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <!-- <a class="nav-link" href="#services">šotori</a> -->
                         <RouterLink to="/" class="link-custom">Domov</RouterLink>
                     </li>
                     <li class="nav-item">
-                        <!-- <a class="nav-link" href="#services">napihljiva igrala</a> -->
                         <RouterLink to="/sotori" class="link-custom">Šotori</RouterLink>
                     </li>
                     <li class="nav-item">
                         <!-- <a class="nav-link" href="#contact">kontakt</a> -->
-                        <RouterLink to="/napihljiva-igrala" class="link-custom">dodatne storitve</RouterLink>
-
+                        <RouterLink to="/dodatne-storitve" class="link-custom">dodatna ponudba</RouterLink>
                     </li>
-                    <li class="nav-item">
-                        <!-- <a class="nav-link" href="#about">o nas</a> -->
+                    <!-- <li class="nav-item">
                         <RouterLink to="/o-nas" class="link-custom">O nas</RouterLink>
 
-                    </li>
+                    </li> -->
                 </ul>
                 <RouterLink to="/kontakt">
-                    <button href="tel:031-123-321" type="button" class="rounded-pill btn-rounded ms-3">{{ tel }}
+                    <button href="tel:031-123-321" type="button" class="rounded-pill btn-rounded ms-3">Kontakt
                         <span>
                             <i>
                                 <fa icon="fa-solid fa-phone"/>

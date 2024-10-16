@@ -8,6 +8,7 @@
 
 
 .contact-section{
+    @include navbarHeight;
     background-image: linear-gradient( to right,
         rgba($primary, 70%),
         rgba($secondary, 40%)),

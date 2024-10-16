@@ -5,6 +5,10 @@
     background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
 }
 
+@mixin navbarHeight {
+    padding-top: 53.188px;
+}
+
 // ABSOLUTE CENTER
 @mixin absoluteCenter {
     position: absolute;

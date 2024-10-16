@@ -71,20 +71,21 @@
             }
         },
         methods: {
-            getInfo() {
-                axios({
-                    method: 'get',
-                    url: 'http://127.0.0.1:8000',
-                    responseType: 'json'
-                })
-                .then(function (response) {
-                    console.log(response.data);
-                });
-            },
+            // getInfo() {
+            //     axios({
+            //         method: 'get',
+            //         url: 'http://127.0.0.1:8000',
+            //         responseType: 'json'
+            //     })
+            //     .then(function (response) {
+            //         console.log(response.data);
+            //     });
+            // },
             sendInfo() {
+                // console.log(this.info)
                 axios({
                     method: 'post',
-                    url: 'http://127.0.0.1:8000/sendInfo',
+                    url: 'http://127.0.0.1:8000/send-email',
                     headers: {
                         accept: 'application/json',
                     },
@@ -119,6 +120,7 @@
                 if(!this.validateEmail(this.info.email)) {
                     this.errors.email.push('Vnesite veljaven E-poštni naslov');
                 }
+                this.sendInfo();
             },
             validateEmail(email) {
                 let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

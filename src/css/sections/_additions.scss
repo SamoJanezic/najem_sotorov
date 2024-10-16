@@ -1,0 +1,16 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+@use "../components/buttons" as *;
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+
+.additions {
+    @include gradient;
+
+    color: $white;
+    .image {
+        max-width: 50%;
+    }
+}
